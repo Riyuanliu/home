@@ -60,7 +60,10 @@ const getWeatherData = async () => {
     } else {
       // 获取天气信息
       const result = await getWeather(40.730610, -74.006, mainKey);
-
+      weatherData.adCode = {
+        city: "New York" || "未知地区",
+        // adcode: data.city.cityId,
+      };
       weatherData.weather = {
         weather: result.weather.main,
         description: result.weather.description,
