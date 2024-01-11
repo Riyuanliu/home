@@ -69,10 +69,10 @@ const getWeatherData = async () => {
         adcode: adCode.adcode,
       };
       // 获取天气信息
-      const result = await getWeather(mainKey, weatherData.adCode.adcode);
+      const result = await getWeather(40.730610, -74.006, mainKey);
       weatherData.weather = {
-        weather: result.lives[0].weather,
-        temperature: result.lives[0].temperature,
+        weather: result.list.weather.main,
+        temperature: result.list.temp.day,
         winddirection: result.lives[0].winddirection,
         windpower: result.lives[0].windpower,
       };
