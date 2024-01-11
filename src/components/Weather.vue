@@ -61,14 +61,14 @@ const getWeatherData = async () => {
       // 获取天气信息
       const result = await getWeather(40.730610, -74.006, mainKey);
 
-  weatherData.weather = {
-    weather: result.weather[0].main,
-    description: result.weather[0].description,
-    temperature: result.main.temp,
-    windSpeed: result.wind.speed,
-    windDirection: result.wind.deg,
-
+      weatherData.weather = {
+        weather: result.weather.main,
+        description: result.weather.description,
+        temperature: result.main.temp,
+        windSpeed: result.wind.speed,
+        windDirection: result.wind.deg,
     }
+      
   } catch (error) {
     console.error("天气信息获取失败:" + error);
     onError("天气信息获取失败");
