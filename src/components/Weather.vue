@@ -66,8 +66,8 @@ const getWeatherData = async () => {
       }
 
       weatherData.weather = {
-        weather: result.weather[0].main,
-        description: result.weather[0].description,
+        weather: result.weather.main,
+        description: result.weather.description,
         temperature: result.main.temp,
         windSpeed: result.wind.speed,
         windDirection: result.wind.deg,
