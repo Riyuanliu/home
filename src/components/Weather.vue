@@ -67,7 +67,7 @@ const getWeatherData = async () => {
         temperature: result.main.temp,
         windSpeed: result.wind.speed,
         windDirection: result.wind.deg,
-    }
+    };
       
   } catch (error) {
     console.error("天气信息获取失败:" + error);
