@@ -31,7 +31,7 @@ const weatherData = reactive({
     adcode: "00000", // 城市编码
   },
   weather: {
-    weather: null, // 天气现象
+    weather: "Sunnly", // 天气现象
     temperature: null, // 实时气温
     winddirection: null, // 风向描述
     windpower: null, // 风力级别
