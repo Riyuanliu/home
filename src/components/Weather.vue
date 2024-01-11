@@ -1,5 +1,5 @@
 <template>
-  <div class="weather" v-if="weatherData.adCode.city && weatherData.weather.weather">
+  <div class="weather" v-if="weatherData.weather.weather">
     <span>{{ weatherData.adCode.city }}&nbsp;</span>
     <span>{{ weatherData.weather.weather }}&nbsp;</span>
     <span>{{ weatherData.weather.temperature }}℃</span>
