@@ -1,5 +1,5 @@
 <template>
-  <div class="weather" v-if="weatherData.weather.weather">
+  <div class="weather" v-if="weatherData.adCode.city && weatherData.weather.weather">
     <span>{{ weatherData.adCode.city }}&nbsp;</span>
     <span>{{ weatherData.weather.weather }}&nbsp;</span>
     <span>{{ weatherData.weather.temperature }}℃</span>
@@ -13,7 +13,7 @@
     <span class="sm-hidden">{{ weatherData.weather.windpower }}&nbsp;级</span>
   </div>
   <div class="weather" v-else>
-    <span>The orginal message</span>
+    <span>One of them isnt a true value</span>
   </div>
 </template>
 
@@ -27,11 +27,11 @@ const mainKey = import.meta.env.VITE_WEATHER_KEY;
 // 天气数据
 const weatherData = reactive({
   adCode: {
-    city: "New Yokr", // 城市
+    city: "New York", // 城市
     adcode: "00000", // 城市编码
   },
   weather: {
-    weather: "Sunnly", // 天气现象
+    weather: "Sunny", // 天气现象
     temperature: null, // 实时气温
     winddirection: null, // 风向描述
     windpower: null, // 风力级别
