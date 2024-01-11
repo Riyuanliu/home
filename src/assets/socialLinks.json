@@ -2,37 +2,43 @@
   {
     "name": "Github",
     "icon": "/images/icon/github.png",
-    "tip": "去 Github 看看",
-    "url": "https://github.com/imsyy"
+    "tip": "Check out my github",
+    "url": "https://github.com/riyuanliu"
+  },
+  {
+    "name": "Linkedin",
+    "icon": "/images/icon/linkedin.png",
+    "tip": "Check out my Linkedin",
+    "url": "https://www.linkedin.com/in/riyuan-liu-9896981b1/"
   },
   {
     "name": "BiliBili",
     "icon": "/images/icon/bilibili.png",
-    "tip": "(゜-゜)つロ 干杯 ~",
+    "tip": "(゜-゜)つロ Cheer ~",
     "url": "https://space.bilibili.com/98544142"
   },
   {
     "name": "QQ",
     "icon": "/images/icon/qq.png",
-    "tip": "有什么事吗",
-    "url": "https://res.abeim.cn/api/qq/?qq=1539250352"
+    "tip": "How can I help you?",
+    "url": "https://res.abeim.cn/api/qq/?qq=1730801125"
   },
   {
     "name": "Email",
     "icon": "/images/icon/email.png",
-    "tip": "来封 Email ~",
-    "url": "mailto:one@imsyy.top"
+    "tip": "Send a Email ~",
+    "url": "mailto:riyuanliu31@gmail.com"
   },
   {
     "name": "Twitter",
     "icon": "/images/icon/twitter.png",
-    "tip": "你懂的 ~",
-    "url": "https://twitter.com/iimmsyy"
+    "tip": "hmmm ~",
+    "url": "https://twitter.com/riyuan_liu76416"
   },
   {
     "name": "Telegram",
     "icon": "/images/icon/telegram.png",
-    "tip": "你懂的 ~",
+    "tip": "hmm ~",
     "url": "https://t.me/bottom_user"
   }
 ]
