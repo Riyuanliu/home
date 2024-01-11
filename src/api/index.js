@@ -59,9 +59,9 @@ export const getAdcode = async (key) => {
 };
 
 // 获取高德地理天气信息
-export const getWeather = async (key, city) => {
+export const getWeather = async (lat, lon, API_key) => {
   const res = await fetch(
-    `https://api.open-meteo.com/v1/gfs?latitude=40.7143&longitude=-74.006&hourly=temperature_2m`,
+    `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_key}`,
   );
   return await res.json();
 };
