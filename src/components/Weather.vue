@@ -62,11 +62,11 @@ const getWeatherData = async () => {
         adcode: "10000",
       };
       weatherData.weather = {
-        weather: result.weather.main,
-        description: result.weather.description,
-        temperature: result.main.temp,
-        windSpeed: result.wind.speed,
-        windDirection: result.wind.deg,
+        weather: result.weather.main || "Unknown weather",
+        description: result.weather.description || "Unknown WD",
+        temperature: result.main.temp || "Unknown Temp",
+        windSpeed: result.wind.speed || "Unknown WS",
+        windDirection: result.wind.deg || "Unknwn WD",
       };
     }
   } catch (error) {
