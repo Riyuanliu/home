@@ -60,13 +60,17 @@ const getWeatherData = async () => {
     } else {
       // 获取天气信息
       const result = await getWeather(40.730610, -74.006, mainKey);
+      
+      if (!result || !result.weather || result.weather.length === 0) {
+        throw new Error("Fail to request weather");
+      }
+
       weatherData.weather = {
         weather: result.weather[0].main,
         description: result.weather[0].description,
         temperature: result.main.temp,
         windSpeed: result.wind.speed,
         windDirection: result.wind.deg,
-      };
 
     }
   } catch (error) {
