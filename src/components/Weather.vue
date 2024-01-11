@@ -13,7 +13,7 @@
     <span class="sm-hidden">{{ weatherData.weather.windpower }}&nbsp;级</span>
   </div>
   <div class="weather" v-else>
-    <span>Weather data acquisition failure</span>
+    <span>The orginal message</span>
   </div>
 </template>
 
@@ -27,8 +27,8 @@ const mainKey = import.meta.env.VITE_WEATHER_KEY;
 // 天气数据
 const weatherData = reactive({
   adCode: {
-    city: null, // 城市
-    adcode: null, // 城市编码
+    city: "New Yokr", // 城市
+    adcode: "00000", // 城市编码
   },
   weather: {
     weather: null, // 天气现象
