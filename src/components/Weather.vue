@@ -64,7 +64,7 @@ const getWeatherData = async () => {
         description: result.weather[0].description || "Unknown WD",
         temperature: result.main.temp || "Unknown Temp",
         windSpeed: result.wind.speed || "fast Af",
-        windDirection: result.wind[0].deg || "Unknwn WD",
+        windDirection: result.wind.deg || "Unknwn WD",
       };
     }
   } catch (error) {
