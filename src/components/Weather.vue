@@ -1,14 +1,13 @@
 <template>
   <div class="weather">
-    <span>{{ weatherData.adCode.city }}&nbsp;</span>
-    <span>{{ weatherData.weather.weather }}&nbsp;</span>
-    <span>{{ weatherData.weather.temperature }}℃</span>
+    <span>{{ &nbsp;weatherData.adCode.city }}&nbsp;</span>
+    <span>{{ &nbsp;weatherData.weather.weather }}&nbsp;</span>
+    <span>{{ &nbsp;weatherData.weather.temperature }}℃&nbsp;</span>
     <span class="sm-hidden">
       &nbsp;{{
         weatherData.weather.winddirection
       }}&nbsp;
     </span>
-    <span class="sm-hidden">{{ weatherData.weather.windpower }}&nbsp;级</span>
   </div>
 </template>
 
@@ -22,7 +21,7 @@ const mainKey = import.meta.env.VITE_WEATHER_KEY;
 // 天气数据
 const weatherData = reactive({
   adCode: {
-    city: "New York", // 城市
+    city: "NY", // 城市
     adcode: "00000", // 城市编码
   },
   weather: {
