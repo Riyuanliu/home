@@ -5,9 +5,7 @@
     <span>{{ weatherData.weather.temperature }}℃</span>
     <span class="sm-hidden">
       &nbsp;{{
-        weatherData.weather.winddirection?.endsWith("风")
-          ? weatherData.weather.winddirection
-          : weatherData.weather.winddirection + "风"
+        weatherData.weather.winddirection°
       }}&nbsp;
     </span>
     <span class="sm-hidden">{{ weatherData.weather.windpower }}&nbsp;级</span>
@@ -65,8 +63,8 @@ const getWeatherData = async () => {
         weather: result.weather[0].main || "UnknownW",
         description: result.weather[0].description || "Unknown WD",
         temperature: result.main.temp || "Unknown Temp",
-        windSpeed: result.wind.speed || "Unknown WS",
-        windDirection: result.wind.deg || "Unknwn WD",
+        windSpeed: result.wind.speed || "fast Af",
+        windDirection: result.wind[0].deg || "Unknwn WD",
       };
     }
   } catch (error) {
