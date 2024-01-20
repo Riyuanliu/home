@@ -1,5 +1,6 @@
 # Personal Website
-This project is folk and modifiy from imsyy 
+This project is folk and modifiy from imsyy.
+
 Welcome to my personal website! This platform is a reflection of my diverse interests and projects. Below, you'll find an overview of the key features:
 
 ## Music API
