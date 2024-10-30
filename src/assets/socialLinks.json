@@ -12,18 +12,6 @@
     "url": "https://www.linkedin.com/in/riyuan-liu-9896981b1/"
   },
   {
-    "name": "BiliBili",
-    "icon": "/images/icon/bilibili.png",
-    "tip": "(゜-゜)つロ Cheer ~",
-    "url": "https://space.bilibili.com/98544142"
-  },
-  {
-    "name": "QQ",
-    "icon": "/images/icon/qq.png",
-    "tip": "How can I help you?",
-    "url": "https://res.abeim.cn/api/qq/?qq=1730801125"
-  },
-  {
     "name": "Email",
     "icon": "/images/icon/email.png",
     "tip": "Send a Email ~",
@@ -32,7 +20,7 @@
   {
     "name": "Twitter",
     "icon": "/images/icon/twitter.png",
-    "tip": "hmmm ~, that is sus",
+    "tip": "hmmm ~, this is X right",
     "url": "https://twitter.com/riyuan_liu76416"
   },
   {
