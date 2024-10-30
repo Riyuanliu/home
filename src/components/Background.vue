@@ -61,16 +61,16 @@ const imgLoadComplete = () => {
 
 // 图片动画完成
 const imgAnimationEnd = () => {
-  console.log("壁纸加载且动画完成");
+  console.log("Wallpaper loaded");
   // 加载完成事件
   emit("loadComplete");
 };
 
 // 图片显示失败
 const imgLoadError = () => {
-  console.error("壁纸加载失败：", bgUrl.value);
+  console.error("Fail to load wallpaper：", bgUrl.value);
   ElMessage({
-    message: "壁纸加载失败，已临时切换回默认",
+    message: "Fail to load wallpaper, Changing back to default",
     icon: h(Error, {
       theme: "filled",
       fill: "#efefef",

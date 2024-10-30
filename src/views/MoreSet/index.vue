@@ -18,14 +18,14 @@
         </div>
         <div class="version">
           <div class="num">v&nbsp;{{ config.version }}</div>
-          <el-tooltip content="Github 源代码仓库" placement="right" :show-arrow="false">
+          <el-tooltip content="Github Source Repository" placement="right" :show-arrow="false">
             <github-one class="github" theme="outline" size="24" @click="jumpTo(config.github)" />
           </el-tooltip>
         </div>
         <el-card class="update">
           <template #header>
             <div class="card-header">
-              <span>更新日志</span>
+              <span>Changelog</span>
             </div>
           </template>
           <div class="upnote">
@@ -43,7 +43,7 @@
       <el-col :span="12" class="right">
         <div class="title">
           <setting-two theme="filled" size="28" fill="#ffffff60" />
-          <span class="name">全局设置</span>
+          <span class="name">Global Settings</span>
         </div>
         <Set />
       </el-col>
@@ -60,11 +60,11 @@ import config from "@/../package.json";
 const store = mainStore();
 const closeShow = ref(false);
 
-// 站点链接
+// Site link
 const siteUrl = computed(() => {
   const url = import.meta.env.VITE_SITE_URL;
   if (!url) return "imsyy.top".split(".");
-  // 判断协议前缀
+  // Check for protocol prefix
   if (url.startsWith("http://") || url.startsWith("https://")) {
     const urlFormat = url.replace(/^(https?:\/\/)/, "");
     return urlFormat.split(".");
@@ -72,18 +72,17 @@ const siteUrl = computed(() => {
   return url.split(".");
 });
 
-// 更新日志
+// Changelog
 const upData = reactive({
   new: [
-    "采用 Vue 进行重构",
-    "音乐歌单支持快速自定义",
-    "壁纸支持个性化设置",
-    "音乐播放器支持音量控制",
+    "Refactored with Vue",
+    "Quick customization support for music playlists",
+    "Wallpaper personalization options",
+    "Volume control support for music player",
   ],
-  fix: ["修复天气 API", "时光胶囊显示错误", "移动端动画及细节", "图标更换为 IconPark"],
+  fix: ["Fixed weather API", "Time capsule display error", "Mobile animations and details", "Switched icons to IconPark"],
 });
 
-// 跳转源代码仓库
 const jumpTo = (url) => {
   window.open(url);
 };
@@ -137,6 +136,7 @@ const jumpTo = (url) => {
         width: 100%;
         height: 260px;
         min-height: 140px;
+
         .bg {
           font-size: 5rem;
         }

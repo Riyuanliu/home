@@ -1,19 +1,19 @@
 <template>
   <div class="setting">
     <el-collapse class="collapse" v-model="activeName" accordion>
-      <el-collapse-item title="个性壁纸" name="1">
+      <el-collapse-item title="Wallpaper" name="1">
         <div class="bg-set">
           <el-radio-group v-model="coverType" text-color="#ffffff" @change="radioChange">
-            <el-radio label="0" size="large" border>默认壁纸</el-radio>
-            <el-radio label="1" size="large" border>每日一图</el-radio>
-            <el-radio label="2" size="large" border>随机风景</el-radio>
-            <el-radio label="3" size="large" border>随机动漫</el-radio>
+            <el-radio label="0" size="large" border>Default Wallpaper</el-radio>
+            <el-radio label="1" size="large" border>Daily Picture</el-radio>
+            <el-radio label="2" size="large" border>Random Landscape</el-radio>
+            <el-radio label="3" size="large" border>Random Anime</el-radio>
           </el-radio-group>
         </div>
       </el-collapse-item>
-      <el-collapse-item title="个性化调整" name="2">
+      <el-collapse-item title="Customization" name="2">
         <div class="item">
-          <span class="text">建站日期显示</span>
+          <span class="text">Show Site Start Date</span>
           <el-switch
             v-model="siteStartShow"
             inline-prompt
@@ -22,7 +22,7 @@
           />
         </div>
         <div class="item">
-          <span class="text">音乐点击是否打开面板</span>
+          <span class="text">Open Music Panel on Click</span>
           <el-switch
             v-model="musicClick"
             inline-prompt
@@ -31,7 +31,7 @@
           />
         </div>
         <div class="item">
-          <span class="text">底栏歌词显示</span>
+          <span class="text">Show Lyrics in Footer</span>
           <el-switch
             v-model="playerLrcShow"
             inline-prompt
@@ -40,7 +40,7 @@
           />
         </div>
         <div class="item">
-          <span class="text">底栏背景模糊</span>
+          <span class="text">Blur Footer Background</span>
           <el-switch
             v-model="footerBlur"
             inline-prompt
@@ -49,9 +49,9 @@
           />
         </div>
       </el-collapse-item>
-      <el-collapse-item title="播放器配置" name="3">
+      <el-collapse-item title="Player Settings" name="3">
         <div class="item">
-          <span class="text">自动播放</span>
+          <span class="text">Autoplay</span>
           <el-switch
             v-model="playerAutoplay"
             inline-prompt
@@ -60,7 +60,7 @@
           />
         </div>
         <div class="item">
-          <span class="text">随机播放</span>
+          <span class="text">Shuffle Playback</span>
           <el-switch
             v-model="playerOrder"
             inline-prompt
@@ -71,16 +71,16 @@
           />
         </div>
         <div class="item">
-          <span class="text">循环模式</span>
+          <span class="text">Loop Mode</span>
           <el-radio-group v-model="playerLoop" size="small" text-color="#FFFFFF">
-            <el-radio label="all" border>列表</el-radio>
-            <el-radio label="one" border>单曲</el-radio>
-            <el-radio label="none" border>不循环</el-radio>
+            <el-radio label="all" border>List</el-radio>
+            <el-radio label="one" border>Single</el-radio>
+            <el-radio label="none" border>No Loop</el-radio>
           </el-radio-group>
         </div>
       </el-collapse-item>
-      <el-collapse-item title="其他设置" name="4">
-        <div>设置内容待增加</div>
+      <el-collapse-item title="Other Settings" name="4">
+        <div>Settings content to be added</div>
       </el-collapse-item>
     </el-collapse>
   </div>
@@ -103,13 +103,13 @@ const {
   playerLoop,
 } = storeToRefs(store);
 
-// 默认选中项
+// Default selected item
 const activeName = ref("1");
 
-// 壁纸切换
+// Wallpaper change
 const radioChange = () => {
   ElMessage({
-    message: "壁纸设置成功，刷新后生效",
+    message: "Wallpaper set successfully, effective after refresh",
     icon: h(SuccessPicture, {
       theme: "filled",
       fill: "#efefef",

@@ -46,21 +46,8 @@ const hitokotoData = reactive({
 
 // 获取一言数据
 const getHitokotoData = async () => {
-  try {
-    const result = await getHitokoto();
-    hitokotoData.text = result.hitokoto;
-    hitokotoData.from = result.from;
-  } catch (error) {
-    ElMessage({
-      message: "一言获取失败",
-      icon: h(Error, {
-        theme: "filled",
-        fill: "#efefef",
-      }),
-    });
-    hitokotoData.text = "这里应该显示一句话";
-    hitokotoData.from = "無名";
-  }
+  hitokotoData.text = "Code is like humor. When you have to explain it, it’s bad.";
+  hitokotoData.from = "Cory House";
 };
 
 // 更新一言数据

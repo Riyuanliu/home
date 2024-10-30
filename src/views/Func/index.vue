@@ -12,9 +12,9 @@
         <div class="right cards">
           <div class="time">
             <div class="date">
-              <span>{{ currentTime.year }}&nbsp;年&nbsp;</span>
-              <span>{{ currentTime.month }}&nbsp;月&nbsp;</span>
-              <span>{{ currentTime.day }}&nbsp;日&nbsp;</span>
+              <span>{{ currentTime.year }}/</span>
+              <span>{{ currentTime.month }}/</span>
+              <span>{{ currentTime.day }}&nbsp;&nbsp;</span>
               <span class="sm-hidden">{{ currentTime.weekday }}</span>
             </div>
             <div class="text">
@@ -36,15 +36,11 @@ import Hitokoto from "@/components/Hitokoto.vue";
 import Weather from "@/components/Weather.vue";
 
 const store = mainStore();
-
-// 当前时间
 const currentTime = ref({});
 const timeInterval = ref(null);
 
-// 播放器 id
 const playerHasId = import.meta.env.VITE_SONG_ID;
 
-// 更新时间
 const updateTimeData = () => {
   currentTime.value = getCurrentTime();
 };
