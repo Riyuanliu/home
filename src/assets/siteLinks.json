@@ -5,11 +5,6 @@
     "link": "https://blog.riyuanliu.com"
   },
   {
-    "icon": "Cloud",
-    "name": "Drive",
-    "link": "https://Drive.riyuanliu.com"
-  },
-  {
     "icon": "CompactDisc",
     "name": "Music",
     "link": "https://music.riyuanliu.com"
@@ -18,16 +13,6 @@
     "icon": "Compass",
     "name": "Search Bar",
     "link": "https://nav.riyuanliu.com"
-  },
-  {
-    "icon": "Book",
-    "name": "Links",
-    "link": "https://links.riyuanliu.com"
-  },
-  {
-    "icon": "Fire",
-    "name": "Top news",
-    "link": "https://news.riyuanliu.com"
   },
   {
     "icon": "LaptopCode",
