@@ -44,6 +44,31 @@ import { Pagination, Mousewheel } from "swiper";
 // 仓库数据
 const projectData = [
   {
+    name: "MasterMind-Solver",
+    author: "riyuanliu",
+    desc: "The MasterMind-Solver is a Python-based solution that automatically solves the board game Mastermind. The program implements an efficient algorithm to guess the correct sequence of colors within a specified number of turns, using feedback from previous guesses to refine its next moves. This solver is designed for a customizable N x N board and supports different code lengths and color options.",
+  },
+  {
+    name: "medipipeUnityProject",
+    author: "riyuanliu",
+    desc: "This project integrates Mediapipe with Unity, allowing the combination of powerful computer vision tools and Unity's rendering capabilities.",
+  },
+  {
+    name: "automatic-giggle",
+    author: "riyuanliu",
+    desc: "This project involves a robot that solves a maze by following the left wall using ROS (Robot Operating System) and is designed for the TurtleBot3 Waffle model. Below are the steps to set up and run the project.",
+  },
+  {
+    name: "Team6",
+    author: "csci-499-fa24",
+    desc: "Food for all is a fullstack platform that suggests recipes based on the ingredients users have at home.",
+  },
+  {
+    name: "Splitsy",
+    author: "riyuanliu",
+    desc: "Splitsy is an iOS app that is intended to make your life easier by providing a simple solution to this splitting problem.",
+  },
+  {
     name: "home",
     author: "riyuanliu",
     desc: "Personal homepage, my personal homepage, homepage source code, homepage template, homepage",
